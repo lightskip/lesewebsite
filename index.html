@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlitzTonne - Professionelle Mülltonnenreinigung</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Blitz<span>Tonne</span></h1>
+                <div class="tagline">Professionelle Mülltonnenreinigung</div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Leistungen</a></li>
+                    <li><a href="#about">Über uns</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#contact" class="btn-primary">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Professionelle Mülltonnenreinigung</h2>
+                <p>Sauberkeit ohne Kompromisse für Ihre Mülltonnen</p>
+                <div class="cta-buttons">
+                    <button onclick="showForm()" class="btn-primary"><i class="fas fa-phone"></i> Anfrage stellen</button>
+                    <a href="#services" class="btn-secondary"><i class="fas fa-info-circle"></i> Mehr erfahren</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="resources\logo.jpg" alt="Mülltonnenreinigung Illustration">
+            </div>
+        </div>
+    </section>
+	<section id="about">
+		<div class="container">
+			<h2>Über uns</h2>
+			<p>
+				Hey, wir sind <strong>Ben</strong> und <strong>Filip</strong> – 15 und 16 Jahre alt und wohnen in <strong>Bergkamen</strong>.
+				Wir haben uns entschieden, im Sommer nicht nur rumzuhängen, sondern etwas Eigenes auf die Beine zu stellen.
+			</p>
+			<p>
+				Mit unserer mobilen Mülltonnen-Reinigung wollen wir nicht nur ekligen Gerüchen den Kampf ansagen, sondern auch ein bisschen Geld für die Ferien und unsere Zukunft verdienen.
+				Wir arbeiten mit <strong>Hochdruckreinigern</strong>, sind <strong>zuverlässig</strong>, <strong>gründlich</strong> und freuen uns über jeden Auftrag.
+			</p>
+			<p>
+				Also wenn eure Mülltonnen mal wieder eine Dusche brauchen – <strong>wir sind zur Stelle!</strong>
+			</p>
+		</div>
+	</section>
+
+    <section id="request-form" class="hidden">
+        <div class="container">
+            <form id="anfrageForm" class="contact-form">
+                <h3>Ihre Anfrage</h3>
+                <input type="text" id="name" placeholder="Ihr Name" required>
+                <input type="tel" id="phone" placeholder="Ihre Telefonnummer" required>
+                <button type="button" onclick="absenden()" class="btn-primary">Absenden</button>
+                <p id="feedback"></p>
+            </form>
+        </div>
+    </section>
+
+    <section id="benefits">
+        <div class="container">
+            <h2>Warum BlitzTonne?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="icon"><i class="fas fa-tint"></i></div>
+                    <h3>Modernste Hochdruck-Technik</h3>
+                    <p>Wir verwenden fortschrittliche Technologie für optimale Ergebnisse.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon"><i class="fas fa-leaf"></i></div>
+                    <h3>Schonende Reinigungsmittel</h3>
+                    <p>Umweltfreundliche Produkte für eine nachhaltige Reinigung.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Schnelle Reinigung</h3>
+                    <p>Effiziente Prozesse für minimale Wartezeiten.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Zufriedenheitsgarantie</h3>
+                    <p>Wir garantieren Ihnen hervorragende Ergebnisse.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<section id="services">
+		<div class="container">
+			<h2>Unsere Leistungen</h2>
+			<div class="services-grid">
+				<div class="service-card">
+					<img src="/api/placeholder/400/250" alt="Mini-Paket">
+					<h3>Mini-Paket</h3>
+					<p>Reinigung von 1 Mülltonne.</p>
+					<span class="price">ab 10€</span>
+				</div>
+				<div class="service-card">
+					<img src="/api/placeholder/400/250" alt="Midi-Paket">
+					<h3>Midi-Paket</h3>
+					<p>Reinigung von bis zu 2 Mülltonnen.</p>
+					<span class="price">ab 15€</span>
+				</div>
+				<div class="service-card">
+					<img src="/api/placeholder/400/250" alt="Maxi-Paket">
+					<h3>Maxi-Paket</h3>
+					<p>Reinigung von bis zu 3 Mülltonnen.</p>
+					<span class="price">ab 25€</span>
+				</div>
+				<div class="service-card">
+					<img src="/api/placeholder/400/250" alt="Groß-Paket">
+					<h3>Groß-Paket</h3>
+					<p>Reinigung von bis zu 4 Mülltonnen.</p>
+					<span class="price">ab 30€</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+    <section id="process">
+        <div class="container">
+            <h2>Unser Reinigungsprozess</h2>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Anmeldung</h3>
+                    <p>Kontaktieren Sie uns für einen Termin.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Reinigung</h3>
+                    <p>Wir reinigen Ihre Tonnen mit Hochdruck.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Desinfektion</h3>
+                    <p>Effektive Maßnahmen zur Vorbeugung gegen Ratten.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Inspektion</h3>
+                    <p>Qualitätskontrolle für perfekte Ergebnisse.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+	<!-- 
+    <section id="testimonials">
+        <div class="container">
+            <h2>Was unsere Kunden sagen</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <div class="quote">"Hervorragender Service! Meine Mülltonnen sind wie neu."</div>
+                    <div class="author">- Michael S., Oberaden</div>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <div class="testimonial">
+                    <div class="quote">"Sehr professionelles Team und faire Preise."</div>
+                    <div class="author">- Sandra K., Berlin</div>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <div class="testimonial">
+                    <div class="quote">"Regelmäßige Reinigung hat meine Müllprobleme gelöst."</div>
+                    <div class="author">- Thomas M., Hamburg</div>
+                    <div class="stars">★★★★☆</div>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+    <section id="shop" class="shop">
+        <div class="container">
+            <h2>Termin vereinbaren.</h2>
+            <p>Trage deine Daten ein, und wir melden uns bei dir!</p>
+            <form action="https://formspree.io/f/mldblnrq" method="POST" class="shop-form">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Dein Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Deine E-Mail" required>
+                </div>
+                <button type="submit" class="btn-primary">Termin vereinbaren</button>
+            </form>
+        </div>
+    </section>
+	
+	
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Blitz<span>Tonne</span></h2>
+                    <p>Professionelle Mülltonnenreinigung</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Leistungen</a></li>
+                        <li><a href="#about">Über uns</a></li>
+                        <li><a href="#shop">Shop</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Kontakt</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Bergkamen</p>
+                    <p><i class="fas fa-envelope"></i> blitztonne@gmail.com</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Folge uns</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MüllBlitz. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
